@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonsLibComponent } from './commons-lib.component';
+import { CommonsLibComponent } from './components/commons-lib.component';
 
 
 
