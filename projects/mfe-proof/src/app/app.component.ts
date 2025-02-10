@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CommonsLibService, State } from '@commons-lib';
+import { CommonsLibService } from '@commons-lib';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +11,7 @@ export class AppComponent {
   title = 'mfeProof';
 
   constructor(private _commonsLibService: CommonsLibService) {
-    this._commonsLibService.state$.subscribe((state:State) =>{
+    this._commonsLibService.state$.subscribe((state:any) =>{
       this.title = state.name;
     })
   }

@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CommonModule } from '@angular/common';
+import { CommonsLibModule } from '@commons-lib';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { CommonModule } from '@angular/common';
   ],
   imports: [
     CommonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CommonsLibModule
   ],
   providers: [],
   bootstrap: [AppComponent]
