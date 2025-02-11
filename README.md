@@ -57,3 +57,13 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
+# Crear las aplicaciones microfrontends (remotes)
+```bash
+ng g application tasks --routing --style=scss --standalone=false
+```
+# Agregar module federation al proyecto
+```bash
+ng add @angular-architects/module-federation --project host --port 4200 --type host
+```
