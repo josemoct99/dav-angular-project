@@ -1,19 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MiComponenteComponent } from './mi-componente/mi-componente.component';
+import { ProjectComponent } from './project/project.component';
 
 import { RouterModule, Routes } from '@angular/router';
 
 
-const routes: Routes = [{ path: '', component: MiComponenteComponent }];
+const routes: Routes = [{ path: '', component: ProjectComponent }];
 
 @NgModule({
   declarations: [
-    MiComponenteComponent
+    ProjectComponent
   ],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
   ]
 })
-export class MiModuloModule { }
+export class ProjectModule { }

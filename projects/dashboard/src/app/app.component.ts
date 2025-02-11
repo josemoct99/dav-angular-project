@@ -8,7 +8,7 @@ import { CommonsLibService } from '@commons-lib';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'mfeProof';
+  title = 'dashboard';
 
   constructor(private _commonsLibService: CommonsLibService) {
     this._commonsLibService.state$.subscribe((state:any) =>{

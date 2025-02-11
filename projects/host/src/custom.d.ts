@@ -1,2 +1,2 @@
-declare module 'mfe/*';
-declare module 'mfeProof/*';
+declare module 'auth/*';
+declare module 'dashboard/*';

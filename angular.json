@@ -148,7 +148,7 @@
 				}
 			}
 		},
-		"mfe": {
+		"auth": {
 			"projectType": "application",
 			"schematics": {
 				"@schematics/angular:component": {
@@ -162,33 +162,33 @@
 					"standalone": false
 				}
 			},
-			"root": "projects/mfe",
-			"sourceRoot": "projects/mfe/src",
+			"root": "projects/auth",
+			"sourceRoot": "projects/auth/src",
 			"prefix": "app",
 			"architect": {
 				"build": {
 					"builder": "ngx-build-plus:browser",
 					"options": {
-						"outputPath": "dist/mfe",
-						"index": "projects/mfe/src/index.html",
+						"outputPath": "dist/auth",
+						"index": "projects/auth/src/index.html",
 						"polyfills": [
 							"zone.js"
 						],
-						"tsConfig": "projects/mfe/tsconfig.app.json",
+						"tsConfig": "projects/auth/tsconfig.app.json",
 						"inlineStyleLanguage": "scss",
 						"assets": [
 							{
 								"glob": "**/*",
-								"input": "projects/mfe/public",
+								"input": "projects/auth/public",
 								"output": "."
 							}
 						],
 						"styles": [
-							"projects/mfe/src/styles.scss"
+							"projects/auth/src/styles.scss"
 						],
 						"scripts": [],
-						"main": "projects/mfe/src/main.ts",
-						"extraWebpackConfig": "projects/mfe/webpack.config.js",
+						"main": "projects/auth/src/main.ts",
+						"extraWebpackConfig": "projects/auth/webpack.config.js",
 						"commonChunk": false
 					},
 					"configurations": {
@@ -206,7 +206,7 @@
 								}
 							],
 							"outputHashing": "all",
-							"extraWebpackConfig": "projects/mfe/webpack.prod.config.js"
+							"extraWebpackConfig": "projects/auth/webpack.prod.config.js"
 						},
 						"development": {
 							"optimization": false,
@@ -220,18 +220,18 @@
 					"builder": "ngx-build-plus:dev-server",
 					"configurations": {
 						"production": {
-							"buildTarget": "mfe:build:production",
-							"extraWebpackConfig": "projects/mfe/webpack.prod.config.js"
+							"buildTarget": "auth:build:production",
+							"extraWebpackConfig": "projects/auth/webpack.prod.config.js"
 						},
 						"development": {
-							"buildTarget": "mfe:build:development"
+							"buildTarget": "auth:build:development"
 						}
 					},
 					"defaultConfiguration": "development",
 					"options": {
 						"port": 4201,
 						"publicHost": "http://localhost:4201",
-						"extraWebpackConfig": "projects/mfe/webpack.config.js"
+						"extraWebpackConfig": "projects/auth/webpack.config.js"
 					}
 				},
 				"extract-i18n": {
@@ -244,23 +244,23 @@
 							"zone.js",
 							"zone.js/testing"
 						],
-						"tsConfig": "projects/mfe/tsconfig.spec.json",
+						"tsConfig": "projects/auth/tsconfig.spec.json",
 						"inlineStyleLanguage": "scss",
 						"assets": [
 							{
 								"glob": "**/*",
-								"input": "projects/mfe/public"
+								"input": "projects/auth/public"
 							}
 						],
 						"styles": [
-							"projects/mfe/src/styles.scss"
+							"projects/auth/src/styles.scss"
 						],
 						"scripts": []
 					}
 				}
 			}
 		},
-		"mfeProof": {
+		"dashboard": {
 			"projectType": "application",
 			"schematics": {
 				"@schematics/angular:component": {
@@ -274,33 +274,33 @@
 					"standalone": false
 				}
 			},
-			"root": "projects/mfe-proof",
-			"sourceRoot": "projects/mfe-proof/src",
+			"root": "projects/dashboard",
+			"sourceRoot": "projects/dashboard/src",
 			"prefix": "app",
 			"architect": {
 				"build": {
 					"builder": "ngx-build-plus:browser",
 					"options": {
-						"outputPath": "dist/mfe-proof",
-						"index": "projects/mfe-proof/src/index.html",
+						"outputPath": "dist/dashboard",
+						"index": "projects/dashboard/src/index.html",
 						"polyfills": [
 							"zone.js"
 						],
-						"tsConfig": "projects/mfe-proof/tsconfig.app.json",
+						"tsConfig": "projects/dashboard/tsconfig.app.json",
 						"inlineStyleLanguage": "scss",
 						"assets": [
 							{
 								"glob": "**/*",
-								"input": "projects/mfe-proof/public",
+								"input": "projects/dashboard/public",
 								"output": "."
 							}
 						],
 						"styles": [
-							"projects/mfe-proof/src/styles.scss"
+							"projects/dashboard/src/styles.scss"
 						],
 						"scripts": [],
-						"main": "projects/mfe-proof/src/main.ts",
-						"extraWebpackConfig": "projects/mfe-proof/webpack.config.js",
+						"main": "projects/dashboard/src/main.ts",
+						"extraWebpackConfig": "projects/dashboard/webpack.config.js",
 						"commonChunk": false
 					},
 					"configurations": {
@@ -318,7 +318,7 @@
 								}
 							],
 							"outputHashing": "all",
-							"extraWebpackConfig": "projects/mfe-proof/webpack.prod.config.js"
+							"extraWebpackConfig": "projects/dashboard/webpack.prod.config.js"
 						},
 						"development": {
 							"optimization": false,
@@ -332,18 +332,18 @@
 					"builder": "ngx-build-plus:dev-server",
 					"configurations": {
 						"production": {
-							"buildTarget": "mfeProof:build:production",
-							"extraWebpackConfig": "projects/mfe-proof/webpack.prod.config.js"
+							"buildTarget": "dashboard:build:production",
+							"extraWebpackConfig": "projects/dashboard/webpack.prod.config.js"
 						},
 						"development": {
-							"buildTarget": "mfeProof:build:development"
+							"buildTarget": "dashboard:build:development"
 						}
 					},
 					"defaultConfiguration": "development",
 					"options": {
 						"port": 4202,
 						"publicHost": "http://localhost:4202",
-						"extraWebpackConfig": "projects/mfe-proof/webpack.config.js"
+						"extraWebpackConfig": "projects/dashboard/webpack.config.js"
 					}
 				},
 				"extract-i18n": {
@@ -356,16 +356,16 @@
 							"zone.js",
 							"zone.js/testing"
 						],
-						"tsConfig": "projects/mfe-proof/tsconfig.spec.json",
+						"tsConfig": "projects/dashboard/tsconfig.spec.json",
 						"inlineStyleLanguage": "scss",
 						"assets": [
 							{
 								"glob": "**/*",
-								"input": "projects/mfe-proof/public"
+								"input": "projects/dashboard/public"
 							}
 						],
 						"styles": [
-							"projects/mfe-proof/src/styles.scss"
+							"projects/dashboard/src/styles.scss"
 						],
 						"scripts": []
 					}

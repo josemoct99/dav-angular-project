@@ -4,11 +4,11 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('mfe/AppModule').then((m) => m.AppModule)
+    loadChildren: () => import('auth/AppModule').then((m) => m.AppModule)
   },
   {
-    path: 'proof',
-    loadChildren: () => import('mfeProof/MiModuloModule').then((m) => m.MiModuloModule)
+    path: 'dashboard',
+    loadChildren: () => import('dashboard/ProjectModule').then((m) => m.ProjectModule)
   },
 ];
 

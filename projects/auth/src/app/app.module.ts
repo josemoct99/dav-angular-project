@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { CommonsLibModule } from '@commons-lib';
+import { FormsModule } from '@angular/forms';
 
 const routes: Routes = [{ path: '', component: AppComponent }];
 
@@ -16,7 +17,8 @@ const routes: Routes = [{ path: '', component: AppComponent }];
     CommonModule,
     AppRoutingModule,
     RouterModule.forChild(routes),
-    CommonsLibModule
+    CommonsLibModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

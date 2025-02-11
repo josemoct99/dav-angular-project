@@ -2,12 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { CommonsLibService, UserService } from '@commons-lib';
 
 @Component({
-  selector: 'app-mi-componente',
+  selector: 'app-project',
   standalone: false,
-  templateUrl: './mi-componente.component.html',
-  styleUrl: './mi-componente.component.scss'
+  templateUrl: './project.component.html',
+  styleUrl: './project.component.scss'
 })
-export class MiComponenteComponent {
+export class ProjectComponent {
 
   users: any[] = [];
 
